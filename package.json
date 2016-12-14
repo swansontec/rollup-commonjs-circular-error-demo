@@ -1,0 +1,19 @@
+{
+  "name": "rollup-commonjs-circular-error-demo",
+  "version": "1.0.0",
+  "description": "Demo of circular dependencies breaking rollup-plugin-commonjs",
+  "main": "index.js",
+  "author": "William Swanson",
+  "license": "MIT",
+  "dependencies": {
+    "hash.js": "^1.0.3"
+  },
+  "devDependencies": {
+    "rollup": "^0.37.0",
+    "rollup-plugin-commonjs": "^6.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  },
+  "scripts": {
+    "test": "rollup -c && node dist/index.cjs.js"
+  }
+}
